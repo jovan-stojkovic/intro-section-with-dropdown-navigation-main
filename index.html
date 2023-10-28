@@ -17,17 +17,19 @@
   <body>
     <div class="main-container">
       <nav>
-        <p id="logo">snap</p>
-        <ul class="nav-ul">
-          <li class="nav-li" id="features">
-            Features <img src="images/icon-arrow-down.svg" alt="arrow-down" />
-          </li>
-          <li class="nav-li" id="company">
-            Company <img src="images/icon-arrow-down.svg" alt="arrow-down" />
-          </li>
-          <li class="nav-li" id="careers">Careers</li>
-          <li class="nav-li" id="about">About</li>
-        </ul>
+        <div class="nav-left">
+          <p id="logo">snap</p>
+          <ul class="nav-ul">
+            <li class="nav-li" id="features">
+              Features <img src="images/icon-arrow-down.svg" alt="arrow-down" />
+            </li>
+            <li class="nav-li" id="company">
+              Company <img src="images/icon-arrow-down.svg" alt="arrow-down" />
+            </li>
+            <li class="nav-li">Careers</li>
+            <li class="nav-li">About</li>
+          </ul>
+        </div>
         <div class="nav-butons">
           <button id="login-button" class="nav-button">Login</button>
           <button id="register-button" class="nav-button">Register</button>
@@ -66,20 +68,26 @@
             Get your team in sync, no matter your location. Streamline
             processes, create team rituals, and watch productivity soar.
           </p>
-          <button class="main-button">
-            Learn more
-          </button>
+          <button class="main-button">Learn more</button>
           <div class="sponsors-container">
             <ul class="sponsors-ul">
-              <li class="sponsor-li"><img src="images/client-databiz.svg" alt="databiz"></li>
-              <li class="sponsor-li"><img src="images/client-audiophile.svg" alt="audiophile"></li>
-              <li class="sponsor-li"><img src="images/client-meet.svg" alt="meet"></li>
-              <li class="sponsor-li"><img src="images/client-maker.svg" alt="maker"></li>
+              <li class="sponsor-li">
+                <img src="images/client-databiz.svg" alt="databiz" />
+              </li>
+              <li class="sponsor-li">
+                <img src="images/client-audiophile.svg" alt="audiophile" />
+              </li>
+              <li class="sponsor-li">
+                <img src="images/client-meet.svg" alt="meet" />
+              </li>
+              <li class="sponsor-li">
+                <img src="images/client-maker.svg" alt="maker" />
+              </li>
             </ul>
           </div>
         </div>
         <div class="img-container">
-          <img src="images/image-hero-desktop.png" alt="">
+          <img id="hero-img" src="images/image-hero-desktop.png" alt="hero" />
         </div>
       </div>
     </div>

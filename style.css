@@ -1,0 +1,84 @@
+@import url("https://fonts.googleapis.com/css2?family=Epilogue:wght@500;700&display=swap");
+
+:root {
+  --Almost-White: hsl(0, 0%, 98%);
+  --Medium-Gray: hsl(0, 0%, 41%);
+  --Almost-Black: hsl(0, 0%, 8%);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.main-container {
+  background-color: var(--Almost-White);
+  font-family: "Epilogue", sans-serif;
+}
+
+#hero-img {
+    height: 200px;
+    width: 200px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+}
+
+.nav-left {
+    display: flex;
+    align-items: center;
+}
+
+#logo {
+    font-size: 40px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+ul {
+    list-style-type: none;
+  }
+
+.nav-ul {
+    display: flex;
+    color: var(--Medium-Gray);
+    gap: 40px;
+}
+
+.nav-li:hover {
+    color: black;
+    cursor: pointer;
+}
+
+.nav-ul img {
+    margin-left: 4px;
+}
+
+.nav-button {
+    all: unset;
+    font-family: "Epilogue", sans-serif;
+    color: var(--Medium-Gray);
+    height: 40px;
+    width: 120px;
+    text-align: center;
+}
+
+.nav-button:hover {
+    color: black;
+    cursor: pointer;
+}
+
+#register-button {
+    border: 3px solid var(--Medium-Gray);
+    border-radius: 15px;
+}
+
+#register-button:hover {
+    border: 3px solid var(--Almost-Black);
+}
+
