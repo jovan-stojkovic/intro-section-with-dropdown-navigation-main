@@ -66,6 +66,7 @@ ul {
   gap: 50px;
 }
 
+
 .nav-li:hover {
   color: var(--Almost-Black);
   cursor: pointer;
@@ -76,7 +77,7 @@ ul {
   cursor: pointer;
 }
 
-.arrow-down {
+.arrow-down-features {
   background-image: url(images/icon-arrow-down.svg);
   height: 6px;
   width: 10px;
@@ -87,7 +88,7 @@ ul {
   transition: 0.5s;
 }
 
-.arrow-up {
+.arrow-up-features {
   background-image: url(images/icon-arrow-up.svg);
   height: 6px;
   width: 10px;
@@ -97,6 +98,28 @@ ul {
   background-repeat: no-repeat;
   transition: 0.5s;
 }
+
+.arrow-down-company {
+    background-image: url(images/icon-arrow-down.svg);
+    height: 6px;
+    width: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-repeat: no-repeat;
+    transition: 0.5s;
+  }
+  
+  .arrow-up-company {
+    background-image: url(images/icon-arrow-up.svg);
+    height: 6px;
+    width: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-repeat: no-repeat;
+    transition: 0.5s;
+  }
 
 .nav-ul img {
   margin-left: 4px;
@@ -137,24 +160,25 @@ ul {
 }
 
 .active-hidden-features {
-  position: absolute;
   top: 40px;
-  left: -80px;
-  background-color: var(--Almost-White);
-  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-  border-radius: 10px;
   opacity: 1;
 }
 
 .hidden-company {
   position: absolute;
-  top: 40px;
+  top: 0px;
   background-color: var(--Almost-White);
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   border-radius: 10px;
+  transition: 0.5s;
   width: 130px;
-  display: none;
+  opacity: 0;
 }
+
+.active-hidden-company {
+    top: 40px;
+    opacity: 1;
+  }
 
 .hidden-features ul {
   display: flex;
