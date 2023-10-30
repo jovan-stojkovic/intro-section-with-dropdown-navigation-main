@@ -16,13 +16,17 @@
   </head>
   <body>
     <div class="main-container">
+      <div class="all"></div>
       <nav>
-        <div class="nav-left">
-          <p id="logo">snap</p>
+        <p id="logo">snap</p>
+        <div class="navbar-content">
+          <button class="mobile-navbar-button"></button>
           <ul class="nav-ul">
             <li class="nav-li" id="features">
-              Features
-              <div class="arrow-down-features" id="features-arrow"></div>
+              <div class="label-arrow-container">
+                Features
+                <div class="arrow-down-features" id="features-arrow"></div>
+              </div>
               <div class="hidden-features" id="features-dropdown">
                 <ul class="hidden-ul">
                   <li class="hidden-li">
@@ -50,8 +54,10 @@
               </div>
             </li>
             <li class="nav-li" id="company">
-              Company
-              <div class="arrow-down-company" id="company-arrow"></div>
+              <div class="label-arrow-container">
+                Company
+                <div class="arrow-down-company" id="company-arrow"></div>
+              </div>
               <div class="hidden-company" id="company-dropdown">
                 <ul class="hidden-ul">
                   <li class="hidden-li">History</li>
@@ -63,14 +69,17 @@
             <li class="nav-li">Careers</li>
             <li class="nav-li">About</li>
           </ul>
-        </div>
-        <div class="nav-butons">
-          <button id="login-button" class="nav-button">Login</button>
-          <button id="register-button" class="nav-button">Register</button>
+
+          <div class="nav-buttons">
+            <button id="login-button" class="nav-button">Login</button>
+            <button id="register-button" class="nav-button">Register</button>
+          </div>
         </div>
       </nav>
-
       <div class="container">
+        <div class="img-container-mobile">
+          <img src="images/image-hero-mobile.png" alt="hero-mobile" />
+        </div>
         <div class="left-side">
           <h1>Make remote work</h1>
           <p class="main-text">
@@ -95,13 +104,9 @@
         </div>
 
         <div class="img-container">
-          <img id="hero-img" src="images/image-hero-desktop.png" alt="hero" />
+          <img src="images/image-hero-desktop.png" alt="hero" />
         </div>
       </div>
     </div>
   </body>
 </html>
-
-<!-- black active LI in navbar when dropdown menu is down -->
-<!-- hide dropdown when i click whenever on the page -->
-<!-- arrow down change -->

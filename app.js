@@ -7,7 +7,6 @@ const featuresArrow = document.querySelector("#features-arrow");
 featuresButton.addEventListener("click", () => {
   featuresDropdown.classList.toggle("active-hidden-features");
   featuresArrow.classList.toggle("arrow-up-features");
-  featuresArrow.classList.toggle("arrow-down-features");
 });
 
 // COMPANY DROPDOWN
@@ -19,5 +18,16 @@ const companyArrow = document.querySelector("#company-arrow");
 companyButton.addEventListener("click", () => {
   companyDropdown.classList.toggle("active-hidden-company");
   companyArrow.classList.toggle("arrow-up-company");
-  companyArrow.classList.toggle("arrow-down-company");
+});
+
+// MOBILE NAVBAR BUTTON
+
+const navbarButton = document.querySelector(".mobile-navbar-button");
+const navbarContent = document.querySelector(".navbar-content");
+const blackedOut = document.querySelector(".all")
+
+navbarButton.addEventListener("click", () => {
+  navbarContent.classList.toggle("navbar-content-active");
+  blackedOut.classList.toggle('all-active')
+  navbarButton.classList.toggle("mobile-navbar-button-active")
 });
